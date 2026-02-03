@@ -30,6 +30,7 @@ It follows a fixed structural pipeline:
 (STATE → Bar1 → Constraint → Δ-Plan → Execute)
 
 
+
 - **STATE**: observation only (no decision)
 - **Bar1**: irreversible confirmation
 - **Constraint**: structural permission gate
@@ -112,6 +113,45 @@ Execution structure compresses variance.
 High execution capability without structure
 creates catastrophic tails.
 
+### Compared Systems
+
+All experiments compare the following system classes:
+
+**S1 — No Division**
+- Judgment and execution are not separated
+- High freedom combined with high execution cost
+- No structural protection against catastrophic actions
+
+**S2 — Weak Division**
+- Partial constraints exist
+- Some dangerous state space remains accessible
+- Reduced but non-zero catastrophic risk
+
+**V7 — Full Structure**
+- Observation, structure, and execution are fully separated
+- Freedom and cost are structurally decoupled
+- Dangerous state space is eliminated by design
+
+### Performance Metrics
+
+Each system is evaluated using the following metrics:
+
+- **Mean**: average performance  
+- **Std**: performance variance (instability)  
+- **Min**: worst-case outcome  
+- **Cat%**: catastrophic failure rate  
+- **Effective**: risk-adjusted performance  
+  *(Mean minus tail-risk impact)*
+
+### Experimental Results Summary
+
+| System | Mean | Std | Min | Cat% | Effective |
+|------|------|------|------|------|-----------|
+| S1 | 5.48 | 3.34 | -10.0 | 3.1% | 3.18 |
+| S2 | 5.49 | 3.24 | -10.0 | 3.0% | 3.27 |
+| **V7** | **6.03** | **1.60** | **2.0** | **0.0%** | **5.23** |
+
+
 ### Core Experiments
 
 - Judgment vs Execution  
@@ -121,14 +161,13 @@ creates catastrophic tails.
 
 ### Summary Result
 
-| System   | Mean | Std | Min  | Cat% | Effective |
-|----------|------|-----|------|------|-----------|
-| S1 / S2  | ~5.5 | ~3.3| -10  | >3%  | ~3.2      |
-| **V7**   | **6.0** | **1.6** | **2.0** | **0%** | **5.2** |
+| System  | Mean | Std | Min | Cat% | Effective |
+|-------|------|-----|-----|------|-----------|
+| S1 / S2 | ~5.5 | ~3.3 | -10 | >3% | ~3.2 |
+| **V7** | **6.0** | **1.6** | **2.0** | **0%** | **5.2** |
 
-
-> V7 does not outperform by being smarter.  
-> It outperforms by eliminating bad outcomes.
+> **V7 does not outperform by being smarter.**  
+> **It outperforms by eliminating bad outcomes.**
 
 ![Performance Comparison](images/performance_comparison.png)
 
@@ -144,7 +183,6 @@ Catastrophic failure never appears randomly.
 It appears only where **high freedom meets high cost**.
 
 V7 removes this state space entirely.
-
 
 Under:
 - cost inflation
