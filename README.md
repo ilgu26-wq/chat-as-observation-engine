@@ -1,3 +1,5 @@
+![Cover](images/cover.png)
+
 ## Execution Grammar
 
 This system does not allow models to decide actions directly.
