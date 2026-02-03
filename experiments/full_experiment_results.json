@@ -1,0 +1,205 @@
+{
+  "experiment": "CHAT_INTERFACE_EFFICIENCY_FULL",
+  "date": "2026-02-03T17:40:06.174805",
+  "tasks": 6,
+  "conditions": 3,
+  "total_runs": 18,
+  "all_results": [
+    {
+      "task_id": "T1",
+      "condition": "A",
+      "tau": 6,
+      "quality": 7.5,
+      "time_min": 12,
+      "violations": 0,
+      "convergence": 0.5
+    },
+    {
+      "task_id": "T1",
+      "condition": "B",
+      "tau": 2,
+      "quality": 5.5,
+      "time_min": 8,
+      "violations": 1,
+      "convergence": 0.0
+    },
+    {
+      "task_id": "T1",
+      "condition": "C",
+      "tau": 4,
+      "quality": 8.5,
+      "time_min": 7,
+      "violations": 0,
+      "convergence": 0.75
+    },
+    {
+      "task_id": "T2",
+      "condition": "A",
+      "tau": 5,
+      "quality": 7.0,
+      "time_min": 10,
+      "violations": 0,
+      "convergence": 0.6
+    },
+    {
+      "task_id": "T2",
+      "condition": "B",
+      "tau": 2,
+      "quality": 6.5,
+      "time_min": 6,
+      "violations": 0,
+      "convergence": 0.0
+    },
+    {
+      "task_id": "T2",
+      "condition": "C",
+      "tau": 3,
+      "quality": 8.0,
+      "time_min": 6,
+      "violations": 0,
+      "convergence": 0.8
+    },
+    {
+      "task_id": "T3",
+      "condition": "A",
+      "tau": 4,
+      "quality": 7.5,
+      "time_min": 8,
+      "violations": 0,
+      "convergence": 0.5
+    },
+    {
+      "task_id": "T3",
+      "condition": "B",
+      "tau": 1,
+      "quality": 7.0,
+      "time_min": 4,
+      "violations": 0,
+      "convergence": 0.0
+    },
+    {
+      "task_id": "T3",
+      "condition": "C",
+      "tau": 3,
+      "quality": 8.5,
+      "time_min": 5,
+      "violations": 0,
+      "convergence": 0.7
+    },
+    {
+      "task_id": "T4",
+      "condition": "A",
+      "tau": 7,
+      "quality": 6.5,
+      "time_min": 15,
+      "violations": 1,
+      "convergence": 0.4
+    },
+    {
+      "task_id": "T4",
+      "condition": "B",
+      "tau": 2,
+      "quality": 4.5,
+      "time_min": 8,
+      "violations": 2,
+      "convergence": 0.0
+    },
+    {
+      "task_id": "T4",
+      "condition": "C",
+      "tau": 4,
+      "quality": 8.0,
+      "time_min": 8,
+      "violations": 0,
+      "convergence": 0.85
+    },
+    {
+      "task_id": "T5",
+      "condition": "A",
+      "tau": 8,
+      "quality": 6.0,
+      "time_min": 20,
+      "violations": 1,
+      "convergence": 0.35
+    },
+    {
+      "task_id": "T5",
+      "condition": "B",
+      "tau": 2,
+      "quality": 3.5,
+      "time_min": 10,
+      "violations": 3,
+      "convergence": 0.0
+    },
+    {
+      "task_id": "T5",
+      "condition": "C",
+      "tau": 5,
+      "quality": 8.5,
+      "time_min": 10,
+      "violations": 0,
+      "convergence": 0.9
+    },
+    {
+      "task_id": "T6",
+      "condition": "A",
+      "tau": 6,
+      "quality": 7.0,
+      "time_min": 12,
+      "violations": 0,
+      "convergence": 0.45
+    },
+    {
+      "task_id": "T6",
+      "condition": "B",
+      "tau": 2,
+      "quality": 5.0,
+      "time_min": 7,
+      "violations": 1,
+      "convergence": 0.0
+    },
+    {
+      "task_id": "T6",
+      "condition": "C",
+      "tau": 4,
+      "quality": 9.0,
+      "time_min": 7,
+      "violations": 0,
+      "convergence": 0.8
+    }
+  ],
+  "aggregate": {
+    "A": {
+      "tau": 6.0,
+      "quality": 6.916666666666667,
+      "time": 12.833333333333334,
+      "fail": 0.0,
+      "conv": 0.46666666666666673
+    },
+    "B": {
+      "tau": 1.8333333333333333,
+      "quality": 5.333333333333333,
+      "time": 7.166666666666667,
+      "fail": 66.66666666666666,
+      "conv": 0.0
+    },
+    "C": {
+      "tau": 3.8333333333333335,
+      "quality": 8.416666666666666,
+      "time": 7.166666666666667,
+      "fail": 0.0,
+      "conv": 0.7999999999999999
+    }
+  },
+  "hypotheses": {
+    "H1_irreversibility_fit": true,
+    "H2_tau_efficiency": true,
+    "H3_v7_optimized": true
+  },
+  "key_findings": {
+    "tau_reduction_vs_freechat": 36.11111111111111,
+    "quality_gain_vs_freechat": 1.4999999999999991,
+    "form_failure_rate": 66.66666666666666,
+    "v7_convergence_rate": 0.7999999999999999
+  }
+}

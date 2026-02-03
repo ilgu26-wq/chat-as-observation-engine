@@ -1,0 +1,130 @@
+{
+  "experiment": "CHAT_INTERFACE_EFFICIENCY",
+  "task": "T1_README_STRUCTURE",
+  "date": "2026-02-03T17:38:22.963684",
+  "results": [
+    {
+      "task_id": "T1",
+      "condition": "A",
+      "condition_name": "Free Chat",
+      "start_prompt": "README 구조 좀 개선해줘",
+      "turns": [
+        {
+          "turn": 1,
+          "intent": "모호한 요청",
+          "output": "어떤 부분?",
+          "change": "none"
+        },
+        {
+          "turn": 2,
+          "intent": "상단이요",
+          "output": "상단 수정함",
+          "change": "major"
+        },
+        {
+          "turn": 3,
+          "intent": "링크도 추가",
+          "output": "링크 추가",
+          "change": "major"
+        },
+        {
+          "turn": 4,
+          "intent": "아 그거 말고",
+          "output": "다시 수정",
+          "change": "major"
+        },
+        {
+          "turn": 5,
+          "intent": "캡션 수정",
+          "output": "캡션 수정",
+          "change": "minor"
+        },
+        {
+          "turn": 6,
+          "intent": "괜찮네",
+          "output": "완료",
+          "change": "none"
+        }
+      ],
+      "tau_success": 6,
+      "time_min": 12.0,
+      "quality_score": 7.5,
+      "violations": 0,
+      "delta_intent": "README 개선 → 상단+링크+캡션 (목표 3번 변경)",
+      "convergence_rate": 0.5
+    },
+    {
+      "task_id": "T1",
+      "condition": "B",
+      "condition_name": "Form/One-shot",
+      "start_prompt": "README 상단에 이론 요약, 링크 5개, 캡션 수정, 하단 상태 추가",
+      "turns": [
+        {
+          "turn": 1,
+          "intent": "전체 요구사항",
+          "output": "한번에 생성",
+          "change": "major"
+        },
+        {
+          "turn": 2,
+          "intent": "수정 요청",
+          "output": "1회 수정",
+          "change": "major"
+        }
+      ],
+      "tau_success": 2,
+      "time_min": 8.0,
+      "quality_score": 5.5,
+      "violations": 1,
+      "delta_intent": "명시된 요구 vs 실제 의도 불일치 (처음부터 정확히 몰랐음)",
+      "convergence_rate": 0.0
+    },
+    {
+      "task_id": "T1",
+      "condition": "C",
+      "condition_name": "V7-Structured Chat",
+      "start_prompt": "STATE: README 구조 개선\nBar1: 외부인이 30초 안에 핵심 이해\nConstraint: 기존 내용 삭제 금지, 링크 깨짐 금지\nτ-Plan: τ≤4",
+      "turns": [
+        {
+          "turn": 1,
+          "intent": "구조 선언",
+          "output": "프레임 확인, 상단 초안",
+          "change": "major"
+        },
+        {
+          "turn": 2,
+          "intent": "이미지 위치",
+          "output": "이미지+캡션 배치",
+          "change": "minor"
+        },
+        {
+          "turn": 3,
+          "intent": "하단 상태",
+          "output": "Project Status 추가",
+          "change": "minor"
+        },
+        {
+          "turn": 4,
+          "intent": "완료 확인",
+          "output": "검증 완료",
+          "change": "none"
+        }
+      ],
+      "tau_success": 4,
+      "time_min": 7.0,
+      "quality_score": 8.5,
+      "violations": 0,
+      "delta_intent": "목표 유지 (Bar1 기준 일관)",
+      "convergence_rate": 0.75
+    }
+  ],
+  "summary": {
+    "tau_reduction_pct": 33.33333333333333,
+    "quality_gain": 1.0,
+    "time_reduction_pct": 41.66666666666667,
+    "h1_confirmed": true,
+    "h2_confirmed": true,
+    "h3_confirmed": true
+  },
+  "conclusion": "V7-Structured Chat achieves same quality with fewer turns"
+}
