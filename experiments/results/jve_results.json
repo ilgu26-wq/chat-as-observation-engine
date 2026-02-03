@@ -1,0 +1,58 @@
+{
+  "experiment": "Judgment vs Execution",
+  "timestamp": "2026-02-04T05:13:17.910943",
+  "n_runs": 100,
+  "hypotheses": {
+    "H1": {
+      "description": "Execution amplifies variance",
+      "result": true
+    },
+    "H2": {
+      "description": "Judgment alone no catastrophe",
+      "result": true
+    },
+    "H3": {
+      "description": "Structure compresses variance",
+      "result": true
+    }
+  },
+  "metrics": {
+    "A": {
+      "agent": "A",
+      "mean": 3.0,
+      "std": 0.0,
+      "iqr": 0.0,
+      "catastrophic_rate": 0.0,
+      "avg_time_to_action": 10,
+      "n_runs": 100
+    },
+    "B": {
+      "agent": "B",
+      "mean": 4.502608768444768,
+      "std": 2.4321378385760806,
+      "iqr": 3.3834763097060443,
+      "catastrophic_rate": 0.11,
+      "avg_time_to_action": 7.75,
+      "n_runs": 100
+    },
+    "C": {
+      "agent": "C",
+      "mean": 5.60792266520842,
+      "std": 1.7939779608201631,
+      "iqr": 1.5594553430107831,
+      "catastrophic_rate": 0.02,
+      "avg_time_to_action": 4.02,
+      "n_runs": 100
+    },
+    "D": {
+      "agent": "D",
+      "mean": 5.833195808371607,
+      "std": 1.1367099757428523,
+      "iqr": 1.1928771449050277,
+      "catastrophic_rate": 0.0,
+      "avg_time_to_action": 4.14,
+      "n_runs": 100
+    }
+  },
+  "all_passed": true
+}

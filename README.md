@@ -17,6 +17,10 @@ STATE → Bar1 → Constraint → Δ-Plan → Execute
 Intelligence remains free.
 Action is always conditional.
 
+## Related Experiments
+
+- [Judgment vs Execution](experiments/EXPERIMENT_JUDGMENT_VS_EXECUTION.md)
+
 ## Why This Direction Wins
 
 **This is not an optimization choice.  
