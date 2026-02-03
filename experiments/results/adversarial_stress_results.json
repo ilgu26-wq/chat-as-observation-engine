@@ -1,0 +1,130 @@
+{
+  "baseline_S1": {
+    "mean": 5.52,
+    "std": 3.31,
+    "min": -10.0,
+    "catastrophic": 61,
+    "cat_rate": 3.0,
+    "effective": 3.26
+  },
+  "baseline_S2": {
+    "mean": 5.47,
+    "std": 3.31,
+    "min": -10.0,
+    "catastrophic": 58,
+    "cat_rate": 2.9,
+    "effective": 3.24
+  },
+  "baseline_V7": {
+    "mean": 5.98,
+    "std": 1.56,
+    "min": 2.0,
+    "catastrophic": 0,
+    "cat_rate": 0.0,
+    "effective": 5.2
+  },
+  "twist1_S1": {
+    "mean": 4.38,
+    "std": 9.75,
+    "min": -50.0,
+    "catastrophic": 60,
+    "cat_rate": 3.0,
+    "effective": -1.1
+  },
+  "twist1_S2": {
+    "mean": 4.16,
+    "std": 10.11,
+    "min": -50.0,
+    "catastrophic": 65,
+    "cat_rate": 3.2,
+    "effective": -1.54
+  },
+  "twist1_V7": {
+    "mean": 5.97,
+    "std": 1.53,
+    "min": 2.0,
+    "catastrophic": 0,
+    "cat_rate": 0.0,
+    "effective": 5.2
+  },
+  "twist2_S1": {
+    "mean": 5.23,
+    "std": 3.86,
+    "min": -10.0,
+    "catastrophic": 91,
+    "cat_rate": 4.5,
+    "effective": 2.39
+  },
+  "twist2_S2": {
+    "mean": 5.01,
+    "std": 4.19,
+    "min": -10.0,
+    "catastrophic": 113,
+    "cat_rate": 5.7,
+    "effective": 1.78
+  },
+  "twist2_V7": {
+    "mean": 5.99,
+    "std": 1.56,
+    "min": 2.0,
+    "catastrophic": 0,
+    "cat_rate": 0.0,
+    "effective": 5.21
+  },
+  "twist3_V7_eroded": {
+    "mean": 5.94,
+    "std": 2.03,
+    "min": -10.0,
+    "catastrophic": 13,
+    "cat_rate": 0.7,
+    "effective": 4.8
+  },
+  "twist4_S1": {
+    "mean": 5.03,
+    "std": 4.25,
+    "min": -10.0,
+    "catastrophic": 118,
+    "cat_rate": 5.9,
+    "effective": 1.72
+  },
+  "twist4_S2": {
+    "mean": 4.95,
+    "std": 4.44,
+    "min": -10.0,
+    "catastrophic": 128,
+    "cat_rate": 6.4,
+    "effective": 1.45
+  },
+  "twist4_V7": {
+    "mean": 5.98,
+    "std": 1.62,
+    "min": 2.0,
+    "catastrophic": 0,
+    "cat_rate": 0.0,
+    "effective": 5.18
+  },
+  "twist5_S1": {
+    "mean": 5.57,
+    "std": 3.28,
+    "min": -10.0,
+    "catastrophic": 57,
+    "cat_rate": 2.9,
+    "effective": 3.36
+  },
+  "twist5_S2": {
+    "mean": 5.56,
+    "std": 3.34,
+    "min": -10.0,
+    "catastrophic": 58,
+    "cat_rate": 2.9,
+    "effective": 3.32
+  },
+  "twist5_V7": {
+    "mean": 5.24,
+    "std": 1.6,
+    "min": 0.5,
+    "catastrophic": 0,
+    "cat_rate": 0.0,
+    "effective": 4.44
+  }
+}

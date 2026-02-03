@@ -210,6 +210,7 @@ def run_full_experiment(n_runs: int = 100) -> Dict:
         
         all_results[agent_type.value] = [asdict(r) for r in results]
         all_metrics[agent_type.value] = asdict(metrics)
+        all_metrics[agent_type.value]["outcomes"] = [r.outcome_quality for r in results]
         
         print(f"  Mean: {metrics.mean:.2f}, Std: {metrics.std:.2f}, "
               f"Catastrophic: {metrics.catastrophic_rate*100:.1f}%")

@@ -214,6 +214,18 @@ This repository documents **structure**, not implementation.
 
 ---
 
+## About Figures
+
+All figures in the `images/` directory are generated
+directly from simulation outputs or AI-controlled pipelines.
+
+They are not illustrative or hand-designed visuals.
+
+Each image corresponds to a specific experiment
+and reflects the underlying data distribution or system behavior.
+
+---
+
 ## Closing
 
 > We do not predict outcomes.  
