@@ -1,162 +1,169 @@
-# V7 Grammar System  
-## Structure for Irreversible Decision Systems
+## Execution Grammar
 
-This repository contains experimental evidence that
-**action-timing constraints**, not prediction or intelligence control,
-are the dominant factor in safety, efficiency, and alignment
-across irreversible systems.
+This system does not allow models to decide actions directly.
 
-Originally developed in trading systems,
-the same structure generalizes to AI agents and safety.
+Execution follows a fixed structural pipeline:
+
+STATE → Bar1 → Constraint → Δ-Plan → Execute
+
+- STATE: observation only (no decision)
+- Bar1: irreversible confirmation
+- Constraint: structural permission gate
+- Δ-Plan: conditional action plan
+- Execute: action is allowed only if all prior gates pass
+
+Intelligence remains free.
+Action is always conditional.
 
 
-# Chat as Irreversible Observation Engine
+# Chat as Observation Engine
 
-## Why Chat is the Natural Interface for Post-Predictive AI
+> **AI doesn't fail because it predicts wrong.  
+> It fails because it acts when it shouldn't.**
 
----
+This repository explores a **non-predictive AI interaction architecture**  
+where **chat is treated as an observation process**, not a decision engine.
 
-> **Prediction failed. Observation scales.**
+The core idea is simple:
 
----
+> **Models think.  
+> Structures decide when action is allowed.  
+> Executors act.**
 
-## Core Discovery
-
-**Chat-based AI is efficient not because it predicts well, but because it aligns with the irreversible nature of human cognition and decision discovery.**
-
----
-
-## The Problem
-
-| Interface | Assumption | Reality |
-|-----------|------------|---------|
-| Form | Intent is known upfront | Intent emerges through interaction |
-| One-shot | User can specify all | User discovers requirements |
-| Pipeline | Linear input → output | Non-linear convergence |
-
-Traditional interfaces assume intent is fixed before interaction.
-**This assumption is false.**
+This is not AI restriction.  
+This is **division of labor by structure**.
 
 ---
 
-## The Axiom
+## 1. From Prediction to Observation
 
-> **Before Bar1, information that determines the outcome does not exist.**
+Traditional AI systems fail at scale not due to lack of intelligence,
+but due to **unconditional action**.
 
-- Intent does not exist fully-formed before expression
-- Ideas crystallize through dialogue
-- Requirements emerge through observation
+Prediction-based systems attempt to collapse uncertainty *before* it resolves.
 
----
+Observation-based systems wait for structure to emerge.
 
-## Experiments Included
-
-- EXP-1: Safety (Catastrophe reduction via action gating)
-- EXP-2: Emergence (Structure-induced pattern formation)
-- EXP-3: Agency Illusion (Self-reference collapse under structure)
-- EXP-4: Scaling Law (Structure invariance across agent scale)
-
-See `/images` and `/results` for full outputs.
-
-
-### 3 Conditions × 6 Tasks = 18 Runs
-
-| Interface | Avg τ | Quality | Failure | Convergence |
-|-----------|-------|---------|---------|-------------|
-| Form/One-shot | 1.8 | 5.3 | **67%** | 0.00 |
-| Free Chat | 6.0 | 6.9 | 0% | 0.47 |
-| V7-Structured | 3.8 | **8.4** | 0% | **0.80** |
-
-### Key Findings
-
-| Metric | V7 vs Free Chat |
-|--------|-----------------|
-| τ Reduction | **36%** |
-| Quality Gain | **+1.5** |
-| Time Reduction | **44%** |
-
-### Ambiguity Effect
-
-| Ambiguity | Form Failure | V7 Effect |
-|-----------|--------------|-----------|
-| Medium | 0% | 33% τ↓ |
-| High | 100% | 37% τ↓ |
-| Very High | 100% | 38% τ↓ |
+![Prediction vs Observation](images/prediction_vs_observation.png)
 
 ---
 
-## V7-Structured Chat Protocol
+## 2. Chat as an Observation Engine
 
-```
-1. STATE      → Declare goal (document/code/design)
-2. Bar1       → Success criterion in 1 line
-3. Constraint → Forbidden actions/boundaries
-4. τ-Plan     → Max turns (e.g., τ≤4)
-5. Execute
-```
+A chat is not a stream of answers.
+It is a **sequence of constrained observations**.
 
-This is not prompt engineering.
-**This is Conversation Grammar.**
+Each turn:
+- reduces uncertainty
+- adds information
+- but does **not** permit action by default
 
----
+Action is only enabled **after structural confirmation**.
 
-## Application Example: AI & Chat Systems
-
-Chat-based systems are treated as observation engines
-that delay irreversible action until structure is resolved.
-
-This is not a UX claim.
-It is a structural property of irreversible systems.
+![Chat as Observation Engine](images/chat_as_observation_engine.png)
 
 ---
 
-## Future Directions
+## 3. Why Prediction Fails but Observation Scales
 
-### AI Tooling
-All advanced AI must be **Chat-native**.
+Prediction explodes with branching futures.
+Observation converges *after reality commits*.
 
-### AI Safety
-Structure-first → Prediction-minimized → Observation-based.
+![Prediction Failed ~ Observation Scales](images/irreversible_intent.png)
 
-### Human-AI Systems
-AI is an **intent convergence accelerator**.
-
-### Complex Domains
-Form collapses. Only Chat + Grammar scales.
+> Before resolution, outcome-determining information does not exist.
 
 ---
 
-## The Declaration
+## 4. The Bar1 Principle (Irreversibility)
 
-```
-The future of AI is not better prediction.
-It is better observation.
+Before a decisive event (Bar1),
+no amount of intelligence can know the outcome.
 
-Chat is not a UI choice.
-Chat is the natural interface for irreversible systems.
+After Bar1,
+structure becomes observable.
 
-The next decade of AI tooling will be built on this axiom.
-```
+![Bar1 Irreversibility](images/irreversible_intent.png)
 
----
-
-## Repository Structure
-
-```
-chat-observation-engine/
-├── README.md                 # This file
-├── docs/
-│   └── THEORY.md             # Full theoretical background
-├── experiments/
-│   ├── experiment_design.py  # Experiment framework
-│   ├── task_T1_comparison.json
-│   └── full_experiment_results.json
-└── images/
-    ├── cover.png
-    └── results.png
-```
+This principle originates from market structure research,
+but generalizes to **all irreversible decision systems**.
 
 ---
 
-**Status:** Experimentally Validated
-**Date:** 2026-02-03
+## 5. Observation-Based Interface Design
+
+Prediction-based interfaces ask:
+> “What will happen?”
+
+Observation-based interfaces ask:
+> “What just became true?”
+
+![Interface Comparison](images/prediction_vs_observation.png)
+
+Chat becomes a **state clarifier**, not a guess generator.
+
+---
+
+## 6. Structured Conversation Grammar (V7)
+
+Action is gated by structure, not confidence.
+
+STATE → Bar1 → Constraint → ΔPlan → Execute
+
+
+![V7 Structured Grammar](images/v7_structured_chat_protocol.png)
+
+- **STATE**: contextual classification
+- **Bar1**: irreversible confirmation
+- **Constraint**: admissibility filter
+- **Δ-Plan**: bounded action proposal
+- **Execute**: permitted action
+
+Models never decide **when** to act.
+They only operate **inside allowed structure**.
+
+---
+
+## 7. What This Is (and Is Not)
+
+**This is:**
+- An AI safety architecture via structure
+- A non-predictive agent framework
+- A generalization of irreversible systems
+
+**This is NOT:**
+- Model censorship
+- Intelligence limitation
+- Behavior fine-tuning
+
+Intelligence stays free.  
+**Action becomes conditional.**
+
+---
+
+## 8. Relation to V7 Grammar System
+
+This work is derived from and conceptually aligned with
+the V7 decision grammar developed for irreversible market systems.
+
+
+
+---
+
+## Status
+
+- Concept: **stable**
+- Structure: **frozen**
+- Experiments: ongoing
+- Code: optional
+
+This repository documents **structure**, not implementation.
+
+---
+
+## Closing
+
+> We do not predict outcomes.  
+> We observe freedom collapsing into reality.
+
+That is where action begins.
