@@ -17,6 +17,44 @@ STATE → Bar1 → Constraint → Δ-Plan → Execute
 Intelligence remains free.
 Action is always conditional.
 
+## Why This Direction Wins
+
+**This is not an optimization choice.  
+It is the only direction that remains stable as complexity grows.**
+
+This direction is not chosen for convenience or trend.
+It is chosen because alternatives fail structurally.
+
+### Prediction Does Not Scale
+Prediction assumes stable intent and reversible error.
+In irreversible systems, neither exists.
+
+As complexity increases:
+- prediction error grows
+- failure cost explodes
+- safety and alignment degrade
+
+### Observation Scales With Ambiguity
+Observation-based systems wait for structure to appear.
+They do not guess.
+
+As ambiguity increases:
+- form and one-shot interfaces collapse
+- observation gains signal
+- structured chat becomes more effective
+
+This is confirmed empirically.
+
+### One Mechanism, Three Wins
+Delaying irreversible action until observation resolves structure
+simultaneously improves:
+
+- safety
+- efficiency
+- alignment
+
+No other direction achieves all three with a single mechanism.
+
 
 # Chat as Observation Engine
 
@@ -84,8 +122,6 @@ no amount of intelligence can know the outcome.
 
 After Bar1,
 structure becomes observable.
-
-![Bar1 Irreversibility](images/irreversible_intent.png)
 
 This principle originates from market structure research,
 but generalizes to **all irreversible decision systems**.
