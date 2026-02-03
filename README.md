@@ -21,6 +21,11 @@ Action is always conditional.
 
 - [Judgment vs Execution](experiments/EXPERIMENT_JUDGMENT_VS_EXECUTION.md)
 
+![Judgment vs Execution Distribution](images/judgment_vs_execution_distribution.png)
+
+Execution power increases variance.  
+Execution structure compresses it.
+
 ## Why This Direction Wins
 
 **This is not an optimization choice.  
