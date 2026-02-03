@@ -100,8 +100,73 @@ Execution never performs judgment.
 This separation removes catastrophic tails.
 
 ---
+## Simulated System Description (What Was Actually Tested)
 
-## 6. Experimental Evidence (Proof)
+All results in this repository are produced from
+a controlled simulation of irreversible decision systems.
+
+No real-world environment is assumed.
+Only structural differences are tested.
+
+### Simulation Model
+
+Each system is modeled as a sequence of decision cycles.
+At each cycle, the system selects an action with an associated:
+
+- **Reward** (performance gain)
+- **Cost** (irreversible downside if failed)
+- **Freedom** (degree of choice variability)
+- **Structure** (whether action is gated)
+
+Outcomes are sampled from stochastic distributions
+with heavy-tail risk.
+
+The key difference between systems is **not intelligence**,
+but **whether irreversible actions are structurally gated**.
+
+---
+
+### System Definitions in Simulation
+
+**S1 — No Division**
+- Judgment and execution are coupled
+- Actions are taken immediately after evaluation
+- High freedom actions may incur high irreversible cost
+- No structural barrier against catastrophic outcomes
+
+**S2 — Weak Division**
+- Partial constraints on execution
+- Some high-risk actions are filtered
+- Dangerous state space is reduced but not eliminated
+
+**V7 — Full Structure**
+- Observation, structure, and execution are strictly separated
+- Actions are permitted only after structural gates (Bar1 + Constraint)
+- High freedom actions are allowed only at near-zero cost
+- High cost actions are allowed only at low freedom
+
+This removes the entire
+**high-freedom × high-cost** state space by design.
+
+---
+
+### What the Simulation Measures
+
+Each run records:
+
+- **Mean** performance across cycles
+- **Std** of performance (instability)
+- **Min** worst-case outcome
+- **Cat%** frequency of catastrophic failures
+- **Effective** performance  
+  *(Mean adjusted for tail-risk impact)*
+
+All reported figures are averages over thousands of independent runs.
+
+No learning, tuning, or adaptation is applied.
+Only structural differences are evaluated.
+
+## Experimental Evidence (Proof)
 
 ### Execution Power vs Execution Structure
 
