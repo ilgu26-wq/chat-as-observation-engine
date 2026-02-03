@@ -1,6 +1,12 @@
 # Chat as Observation Engine
 ## Execution Grammar for Irreversible Systems
 
+![Chat as Observation Engine — Cover](images/cover.png)
+
+# Chat as Observation Engine
+## Execution Grammar for Irreversible Systems
+
+
 ---
 
 ## 1. What This Repository Is
