@@ -23,8 +23,14 @@ Action is always conditional.
 
 ![Judgment vs Execution Distribution](images/judgment_vs_execution_distribution.png)
 
-Execution power increases variance.  
-Execution structure compresses it.
+Execution power scales variance.
+Execution structure dominates performance.
+
+No execution engine can ever outperform
+structure-level efficiency.
+
+**Execution engines will always lose to execution grammar.**
+
 
 ## Why This Direction Wins
 
