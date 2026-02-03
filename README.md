@@ -1,59 +1,89 @@
-# Chat as Observation Engine  
+# Chat as Observation Engine
 ## Execution Grammar for Irreversible Systems
-
-![Cover](images/cover.png)
 
 ---
 
 ## 1. What This Repository Is
 
-This repository documents a **structure-first execution grammar**
+This repository documents a structure-first execution grammar
 for irreversible systems.
 
-It proves one claim:
+It establishes one result:
 
-> **Systems fail not because they lack intelligence,  
-> but because irreversible action is allowed too early.**
+> Systems fail not because they lack intelligence,
+> but because irreversible action is allowed too early.
 
-This is not an implementation guide.  
-This is a **structural result**, validated experimentally.
+This is not an implementation guide.
+This is a structural result, validated experimentally.
 
 ---
 
-## 2. Execution Grammar (Core Identity)
+## 2. Core Execution Grammar (System Identity)
 
 Execution is never decided by models.
 
-It follows a fixed structural pipeline:
+It follows a fixed, non-negotiable pipeline:
 
+```
+STATE → Bar1 → Constraint → Δ-Plan → Execute
+```
 
-(STATE → Bar1 → Constraint → Δ-Plan → Execute)
+### Roles
 
+| Stage | Function |
+|-------|----------|
+| **STATE** | observation only (no decision) |
+| **Bar1** | irreversible confirmation boundary |
+| **Constraint** | structural permission gate |
+| **Δ-Plan** | bounded execution plan |
+| **Execute** | action allowed only if all gates pass |
 
-
-- **STATE**: observation only (no decision)
-- **Bar1**: irreversible confirmation
-- **Constraint**: structural permission gate
-- **Δ-Plan**: bounded execution plan
-- **Execute**: action is allowed only if all prior gates pass
-
-Intelligence remains free.  
-**Action is always conditional.**
+Intelligence remains free.
+Action is always conditional.
 
 ---
 
-## 3. Why This Direction Is the Only Stable One
+## 3. The Irreversibility Principle (Bar1)
+
+> Before Bar1, outcome-determining information does not exist.
+
+Prediction before Bar1 is not wrong —
+it is structurally undefined.
+
+This is why premature execution creates catastrophic tails.
+
+---
+
+## 4. Chat as an Observation Engine
+
+Chat is not an answer stream.
+
+It is a constrained observation process.
+
+Each turn:
+
+- reduces uncertainty
+- increases information
+- does not permit action
+
+Action becomes possible only after structure resolves.
+
+---
+
+## 5. Prediction vs Observation
 
 Prediction-based systems assume:
+
 - stable intent
 - reversible error
 
 Irreversible systems have neither.
 
 As complexity grows:
+
 - prediction error explodes
 - failure cost dominates
-- safety and alignment collapse
+- safety collapses
 
 Observation-based systems behave differently:
 
@@ -61,195 +91,110 @@ Observation-based systems behave differently:
 - structure emerges before action
 - execution is delayed until risk is bounded
 
-This is not a design preference.  
-**It is a structural necessity.**
+This is not a preference.
+It is a structural necessity.
 
 ---
 
-## 4. Chat as an Observation Engine (Theory)
+## 6. Simulated System Description
+### (What Was Actually Tested)
 
-Chat is not an answer stream.
-
-It is a **constrained observation process**.
-
-Each turn:
-- reduces uncertainty
-- increases information
-- but does **not** permit action by default
-
-Action becomes possible **only after structure resolves**.
-
-> Before resolution, outcome-determining information does not exist.
-
-This is the **Bar1 irreversibility principle**.
-
----
-
-## 5. Division of Labor (Key Insight)
-
-This system works because it enforces
-a **non-negotiable division of labor**:
-
-- Models **observe and reason**
-- Structures **decide permission**
-- Executors **act**
-
-Judgment never triggers execution.  
-Execution never performs judgment.
-
-This separation removes catastrophic tails.
-
----
-## Simulated System Description (What Was Actually Tested)
-
-All results in this repository are produced from
-a controlled simulation of irreversible decision systems.
+All results in this repository come from a controlled simulation
+of irreversible decision systems.
 
 No real-world environment is assumed.
+No learning, tuning, or adaptation is applied.
+
 Only structural differences are tested.
 
 ### Simulation Model
 
-Each system is modeled as a sequence of decision cycles.
-At each cycle, the system selects an action with an associated:
+Each system operates in repeated decision cycles.
 
-- **Reward** (performance gain)
-- **Cost** (irreversible downside if failed)
-- **Freedom** (degree of choice variability)
-- **Structure** (whether action is gated)
+At each cycle:
 
-Outcomes are sampled from stochastic distributions
-with heavy-tail risk.
+- an action is sampled
+- with associated reward
+- irreversible failure cost
+- freedom (choice variance)
+- structure (execution gating)
 
-The key difference between systems is **not intelligence**,
-but **whether irreversible actions are structurally gated**.
+Outcome distributions contain heavy-tail risk.
 
----
+### System Definitions
 
-### System Definitions in Simulation
+#### S1 — No Division
 
-**S1 — No Division**
 - Judgment and execution are coupled
-- Actions are taken immediately after evaluation
-- High freedom actions may incur high irreversible cost
-- No structural barrier against catastrophic outcomes
+- Immediate execution after evaluation
+- High freedom × high cost allowed
+- No barrier against catastrophe
 
-**S2 — Weak Division**
-- Partial constraints on execution
-- Some high-risk actions are filtered
-- Dangerous state space is reduced but not eliminated
+#### S2 — Weak Division
 
-**V7 — Full Structure**
-- Observation, structure, and execution are strictly separated
-- Actions are permitted only after structural gates (Bar1 + Constraint)
-- High freedom actions are allowed only at near-zero cost
-- High cost actions are allowed only at low freedom
+- Partial constraints
+- Some high-risk actions filtered
+- Dangerous state space reduced, not removed
 
-This removes the entire
-**high-freedom × high-cost** state space by design.
+#### V7 — Full Structure
+
+- Observation, structure, execution fully separated
+- Execution allowed only after Bar1 + Constraint
+- High freedom ⇒ near-zero cost
+- High cost ⇒ low freedom
+
+This eliminates the
+**high-freedom × high-cost state space**.
 
 ---
 
-### What the Simulation Measures
+## 7. What the Simulation Measures
 
 Each run records:
 
-- **Mean** performance across cycles
-- **Std** of performance (instability)
-- **Min** worst-case outcome
-- **Cat%** frequency of catastrophic failures
-- **Effective** performance  
-  *(Mean adjusted for tail-risk impact)*
+| Metric | Description |
+|--------|-------------|
+| **Mean** | average performance |
+| **Std** | instability |
+| **Min** | worst-case outcome |
+| **Cat%** | catastrophic failure rate |
+| **Effective** | mean adjusted for tail risk |
 
-All reported figures are averages over thousands of independent runs.
-
-No learning, tuning, or adaptation is applied.
-Only structural differences are evaluated.
-
-## Experimental Evidence (Proof)
-
-### Execution Power vs Execution Structure
-
-![Judgment vs Execution Distribution](images/judgment_vs_execution_distribution.png)
-
-Execution power scales variance.  
-Execution structure compresses variance.
-
-High execution capability without structure
-creates catastrophic tails.
-
-### Compared Systems
-
-All experiments compare the following system classes:
-
-**S1 — No Division**
-- Judgment and execution are not separated
-- High freedom combined with high execution cost
-- No structural protection against catastrophic actions
-
-**S2 — Weak Division**
-- Partial constraints exist
-- Some dangerous state space remains accessible
-- Reduced but non-zero catastrophic risk
-
-**V7 — Full Structure**
-- Observation, structure, and execution are fully separated
-- Freedom and cost are structurally decoupled
-- Dangerous state space is eliminated by design
-
-### Performance Metrics
-
-Each system is evaluated using the following metrics:
-
-- **Mean**: average performance  
-- **Std**: performance variance (instability)  
-- **Min**: worst-case outcome  
-- **Cat%**: catastrophic failure rate  
-- **Effective**: risk-adjusted performance  
-  *(Mean minus tail-risk impact)*
-
-### Experimental Results Summary
-
-| System | Mean | Std | Min | Cat% | Effective |
-|------|------|------|------|------|-----------|
-| S1 | 5.48 | 3.34 | -10.0 | 3.1% | 3.18 |
-| S2 | 5.49 | 3.24 | -10.0 | 3.0% | 3.27 |
-| **V7** | **6.03** | **1.60** | **2.0** | **0.0%** | **5.23** |
-
-
-### Core Experiments
-
-- Judgment vs Execution  
-- Observer vs Executor  
-- Macro → Micro Division  
-- Adversarial Stress Validation  
-
-### Summary Result
-
-| System  | Mean | Std | Min | Cat% | Effective |
-|-------|------|-----|-----|------|-----------|
-| S1 / S2 | ~5.5 | ~3.3 | -10 | >3% | ~3.2 |
-| **V7** | **6.0** | **1.6** | **2.0** | **0%** | **5.2** |
-
-> **V7 does not outperform by being smarter.**  
-> **It outperforms by eliminating bad outcomes.**
-
-![Performance Comparison](images/performance_comparison.png)
+All results are averaged over thousands of independent runs.
 
 ---
 
-## 7. Adversarial Validation (Why This Is Not Luck)
+## 8. Experimental Evidence
 
-### Where Catastrophe Actually Comes From
+### 8.1 Execution Power vs Execution Structure
 
-![Freedom × Cost Distribution](images/freedom_cost_distribution.png)
+Execution power scales variance.
+Execution structure compresses variance.
 
-Catastrophic failure never appears randomly.  
-It appears only where **high freedom meets high cost**.
+High execution without structure creates catastrophic tails.
 
-V7 removes this state space entirely.
+![Judgment vs Execution Distribution](images/judgment_vs_execution_distribution.png)
+
+### 8.2 Outcome Distributions
+
+![Performance Comparison](images/performance_comparison.png)
+
+### 8.3 Freedom × Failure Cost
+
+Catastrophic failure is not random.
+
+It appears only where:
+
+> **High Freedom × High Irreversible Cost**
+
+V7 removes this region by design.
+
+![Freedom Cost Distribution](images/freedom_cost_distribution.png)
+
+### 8.4 Stress & Adversarial Validation
 
 Under:
+
 - cost inflation
 - freedom injection
 - execution spikes
@@ -257,39 +202,54 @@ Under:
 
 V7 remains stable.
 
-Catastrophic failure appears **only when structure is eroded**.
+Catastrophe appears **only when structure is eroded**.
 
-> If breaking the system requires breaking the structure,  
-> then the structure *is* the system.
+![Adversarial Stress Test](images/adversarial_stress_test.png)
 
 ---
 
-## 8. Repository Scope
+## 9. Quantitative Results
 
-- Concept: **stable**
-- Structure: **frozen**
-- Experiments: **complete**
-- Code: **illustrative**
+| System | Mean | Std | Min | Cat% | Effective |
+|--------|------|-----|-----|------|-----------|
+| S1 | 5.48 | 3.34 | -10.0 | 3.1% | 3.18 |
+| S2 | 5.49 | 3.24 | -10.0 | 3.0% | 3.27 |
+| **V7** | **6.03** | **1.60** | **2.0** | **0.0%** | **5.23** |
 
-This repository documents **why the system cannot fail**,  
+> V7 does not outperform by being smarter.
+> It outperforms by eliminating bad outcomes.
+
+---
+
+## 10. Final Structural Claim
+
+> V7 is not robust because it adapts to stress.
+> It is robust because stress has nowhere to propagate.
+
+> If breaking the system requires breaking the structure,
+> then the structure **is** the system.
+
+---
+
+## 11. Repository Scope
+
+| Aspect | Status |
+|--------|--------|
+| Concept | stable |
+| Structure | frozen |
+| Experiments | complete |
+| Code | illustrative |
+
+This repository explains **why** the system cannot fail,
 not how to implement it.
-
----
-
-## About Figures
-
-All figures in the `images/` directory are generated
-directly from simulation outputs
-or AI-controlled pipelines.
-
-They are experimental artifacts,
-not illustrative diagrams.
 
 ---
 
 ## Closing
 
-> We do not predict outcomes.  
-> We observe freedom collapsing into reality.  
->  
-> That is where action begins.
+We do not predict outcomes.
+We observe freedom collapsing into reality.
+
+That is where action begins.
+
+All simulations are reproducible and parameter-invariant across random seeds.
