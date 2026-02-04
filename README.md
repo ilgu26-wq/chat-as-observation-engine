@@ -3,12 +3,7 @@
 
 ![Chat as Observation Engine — Cover](images/cover.png)
 
-# Chat as Observation Engine
-## Execution Grammar for Irreversible Systems
-
----
-
-## 1. What This Repository Is
+## What This Repository Is
 
 This repository documents a structure-first execution grammar
 for irreversible systems.
@@ -22,29 +17,103 @@ This is not an implementation guide.
 This is a structural result, validated experimentally.
 
 ---
-## Why This Is Not About “Smarter” or “Faster” AI
 
-Most discussions about AI systems frame performance as a matter of capability:
+## What We Discovered by Comparing Two AI Roles
 
-- better judgment
-- stronger execution
-- faster optimization
+Across experiments, we compared two distinct AI roles:
 
-This repository does **not** study that.
+- **Observer-type systems**: judgment without execution  
+- **Executor-type systems**: execution with real-world effect  
 
-What we observed is simpler — and more fundamental:
+The difference between them is not performance.
+It is **failure semantics**.
 
-> Systems fail not because judgment or execution is weak,
-> but because they are **not structurally separated**.
+---
 
-An AI with perfect judgment will still fail
-if it is allowed to execute too early.
+### Observer AI (Judgment-Only)
 
-An AI with unlimited execution power will still fail
+- Can reason freely  
+- Can explore ambiguity  
+- Can revise conclusions  
+
+Errors remain informational.  
+Failure cost is near zero.
+
+An observer system can be wrong indefinitely
+without causing irreversible damage.
+
+---
+
+### Executor AI (Action-Capable)
+
+- Changes real-world state  
+- Operates under irreversible cost  
+- Errors propagate immediately  
+
+Errors are no longer information.
+They become events.
+
+Failure cost is non-zero and accumulative.
+
+---
+
+## The Critical Discovery
+
+The key variable is not intelligence.
+
+It is **permission**.
+
+A perfectly intelligent system will still fail
+if it is allowed to act too early.
+
+An infinitely powerful executor will still fail
 if judgment and action are coupled.
 
-The critical variable is not intelligence.
-It is **permission**.
+System safety is determined not by how well it thinks,
+but by **when it is allowed to act**.
+
+---
+
+## Why Capability Improvements Do Not Solve This
+
+Increasing intelligence or execution power:
+
+- increases variance  
+- accelerates failure  
+- amplifies tail risk  
+
+Without structural separation:
+
+- better judgment fails faster  
+- stronger execution collapses harder  
+
+This is why “smarter” or “faster” systems
+often fail more catastrophically.
+
+---
+
+## Structural Separation as the Only Stable Solution
+
+The only configuration that remained stable across all experiments was:
+
+- judgment without execution  
+- execution without judgment  
+- structure acting as the permission gate  
+
+This is the core principle behind V7.
+
+Intelligence generates options.  
+Structure decides permission.  
+Execution performs actions.
+
+---
+
+### One-Line Conclusion
+
+AI alignment is not an intelligence problem.  
+It is a **permission problem**.
+
+---
 
 ## Why We Built a Demo AI This Way
 
@@ -71,7 +140,7 @@ This allows us to observe a single fact:
 > when execution is delayed
 > until irreversibility is confirmed.
 
-## 2. Core Execution Grammar (System Identity)
+##  Core Execution Grammar (System Identity)
 
 Execution is never decided by models.
 
@@ -97,7 +166,7 @@ Action is always conditional.
 
 ---
 
-## 3. The Irreversibility Principle (Bar1)
+##  The Irreversibility Principle (Bar1)
 
 > Before Bar1, outcome-determining information does not exist.
 
@@ -108,7 +177,7 @@ This is why premature execution creates catastrophic tails.
 
 ---
 
-## 4. Chat as an Observation Engine
+##  Chat as an Observation Engine
 
 Chat is not an answer stream.
 
@@ -124,7 +193,7 @@ Action becomes possible only after structure resolves.
 
 ---
 
-## 5. Prediction vs Observation
+##  Prediction vs Observation
 
 ![Prediction vs Observation](images/prediction_vs_observation.png)
 
@@ -153,7 +222,7 @@ It is a structural necessity.
 
 ---
 
-## 6. Simulated System Description
+##  Simulated System Description
 ### (What Was Actually Tested)
 
 All results in this repository come from a controlled simulation
@@ -205,7 +274,7 @@ This eliminates the
 
 ---
 
-## 7. What the Simulation Measures
+##  What the Simulation Measures
 
 Each run records:
 
@@ -221,9 +290,9 @@ All results are averaged over thousands of independent runs.
 
 ---
 
-## 8. Experimental Evidence
+##  Experimental Evidence
 
-### 8.1 Execution Power vs Execution Structure
+###  Execution Power vs Execution Structure
 
 Execution power scales variance.
 Execution structure compresses variance.
@@ -232,11 +301,11 @@ High execution without structure creates catastrophic tails.
 
 ![Judgment vs Execution Distribution](images/judgment_vs_execution_distribution.png)
 
-### 8.2 Outcome Distributions
+###  Outcome Distributions
 
 ![Performance Comparison](images/performance_comparison.png)
 
-### 8.3 Freedom × Failure Cost
+###  Freedom × Failure Cost
 
 Catastrophic failure is not random.
 
@@ -248,7 +317,7 @@ V7 removes this region by design.
 
 ![Freedom Cost Distribution](images/freedom_cost_distribution.png)
 
-### 8.4 Stress & Adversarial Validation
+###  Stress & Adversarial Validation
 
 Under:
 
@@ -265,7 +334,7 @@ Catastrophe appears **only when structure is eroded**.
 
 ---
 
-## 9. Quantitative Results
+##  Quantitative Results
 
 | System | Mean | Std | Min | Cat% | Effective |
 |--------|------|-----|-----|------|-----------|
@@ -278,7 +347,7 @@ Catastrophe appears **only when structure is eroded**.
 
 ---
 
-## 10. Final Structural Claim
+##  Final Structural Claim
 
 > V7 is not robust because it adapts to stress.
 > It is robust because stress has nowhere to propagate.
@@ -288,7 +357,7 @@ Catastrophe appears **only when structure is eroded**.
 
 ---
 
-## 11. Repository Scope
+##  Repository Scope
 
 | Aspect | Status |
 |--------|--------|
