@@ -18,6 +18,82 @@ This is a structural result, validated experimentally.
 
 ---
 
+## Why This Matters Now
+
+![Irreversible Energy Law — Structure Over Speed](images/energy_structure_hero.png)
+
+Modern AI systems are facing a paradox:
+
+- models become more capable  
+- execution becomes cheaper and faster  
+- yet **energy cost, operational risk, and failure impact grow superlinearly**
+
+This repository demonstrates that this is **not** a scaling problem.
+
+It is a **structural permission problem**.
+
+Across controlled experiments, we show that most AI energy consumption
+does **not** come from incorrect decisions,
+but from decisions made **before they are structurally allowed to exist**.
+
+We define energy waste as:
+
+> **Waste = Energy_spent − Information_generated**
+
+In irreversible systems, computation performed
+before irreversibility is confirmed
+produces no usable information,
+only accumulated cost.
+
+> 📌 **Key Result**
+>  
+> This repository establishes a system-level law of energy waste  
+> in irreversible decision systems.
+>
+> 👉 **[Irreversible Energy Law of Decision Systems](STRUCTURE_OBSERVER_ENERGY.md)**
+
+---
+
+## Experimental Result (Energy Perspective)
+
+Across Phase 2–3 experiments:
+
+- Introducing an execution permission gate reduced computation by **~65%**
+- Even a *wrong* or *random* gate reduced energy use by **50%+**
+- Scaling model capacity without structure amplified waste by **7×**
+- At enterprise scale, this translated into:
+  - **30,841 kWh saved / year**
+  - **$3,701 cost reduction**
+  - **12,337 kg CO₂ avoided**
+
+> **Energy efficiency emerged from execution permission,  
+> not from decision correctness or model intelligence.**
+
+This result holds even when the gate is inaccurate,
+randomized, or intentionally degraded.
+
+The implication is unavoidable:
+
+> **Always thinking is the most expensive policy.**
+
+---
+
+## Structure Over Speed
+
+The image above visualizes this principle.
+
+The arc is not speed.
+It is not optimization.
+It is a **permission boundary**.
+
+Execution that crosses this boundary
+before structure resolves
+creates irreversible energy loss and tail risk.
+
+This repository exists to formalize that boundary.
+
+---
+
 ## What We Discovered by Comparing Two AI Roles
 
 Across experiments, we compared two distinct AI roles:
