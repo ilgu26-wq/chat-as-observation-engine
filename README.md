@@ -6,7 +6,6 @@
 # Chat as Observation Engine
 ## Execution Grammar for Irreversible Systems
 
-
 ---
 
 ## 1. What This Repository Is
@@ -23,6 +22,54 @@ This is not an implementation guide.
 This is a structural result, validated experimentally.
 
 ---
+## Why This Is Not About “Smarter” or “Faster” AI
+
+Most discussions about AI systems frame performance as a matter of capability:
+
+- better judgment
+- stronger execution
+- faster optimization
+
+This repository does **not** study that.
+
+What we observed is simpler — and more fundamental:
+
+> Systems fail not because judgment or execution is weak,
+> but because they are **not structurally separated**.
+
+An AI with perfect judgment will still fail
+if it is allowed to execute too early.
+
+An AI with unlimited execution power will still fail
+if judgment and action are coupled.
+
+The critical variable is not intelligence.
+It is **permission**.
+
+## Why We Built a Demo AI This Way
+
+The systems in this repository are not optimized agents.
+
+They do not learn.
+They do not improve.
+They do not compete on performance.
+
+They exist for one purpose only:
+
+> To demonstrate what happens
+> when observation, judgment, and execution
+> are either **entangled** or **structurally separated**.
+
+The demo AI is intentionally constrained.
+
+Not to reduce capability —
+but to isolate structure.
+
+This allows us to observe a single fact:
+
+> Catastrophic failure disappears
+> when execution is delayed
+> until irreversibility is confirmed.
 
 ## 2. Core Execution Grammar (System Identity)
 
@@ -33,6 +80,7 @@ It follows a fixed, non-negotiable pipeline:
 ```
 STATE → Bar1 → Constraint → Δ-Plan → Execute
 ```
+![Structured Observation-to-Execution Pipeline](images/v7_structured_chat_protocol.png)
 
 ### Roles
 
@@ -77,6 +125,9 @@ Action becomes possible only after structure resolves.
 ---
 
 ## 5. Prediction vs Observation
+
+![Prediction vs Observation](images/prediction_vs_observation.png)
+
 
 Prediction-based systems assume:
 
